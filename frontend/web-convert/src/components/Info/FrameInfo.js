@@ -8,7 +8,9 @@ function FrameInfo() {
         <h2>
           Find out <span>more</span> about our frames
         </h2>
-        <button class="normal">Read More</button>
+        <a href="/">
+          <button class="normal">Read More</button>
+        </a>
       </section>
     </>
   );

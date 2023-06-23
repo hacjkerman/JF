@@ -8,7 +8,9 @@ function PlaqueInfo() {
         <h2>
           Find out <span>more</span> about our plaque
         </h2>
-        <button class="normal">Read More</button>
+        <a href="/">
+          <button class="normal">Read More</button>
+        </a>
       </section>
     </>
   );
