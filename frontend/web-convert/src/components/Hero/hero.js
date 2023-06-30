@@ -9,7 +9,7 @@ function hero() {
           <h1>and your university</h1>
           <p>Save more with coupons & up to 70% off!</p>
           <button>
-            <a href="/shop">Shop Now</a>
+            <a href="/plaques">Shop Now</a>
           </button>
         </div>
       </section>

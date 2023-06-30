@@ -9,26 +9,26 @@ function options() {
   return (
     <>
       <section className="section-p1" id="feature">
-        <div className="fe-box">
+        <a href="/frames" className="fe-box">
           <img src={frame} alt="" />
           <h6>Frames</h6>
-        </div>
-        <div className="fe-box">
+        </a>
+        <a href="/plaques" className="fe-box">
           <img src={plaque} alt="" />
           <h6>Plaques</h6>
-        </div>
-        <div className="fe-box">
+        </a>
+        <a href="/plaques" className="fe-box">
           <img src={custom} alt="" />
           <h6>Custom</h6>
-        </div>
-        <div className="fe-box">
+        </a>
+        <a href="/plaques" className="fe-box">
           <img src={tutorial} alt="" />
           <h6>Tutorial</h6>
-        </div>
-        <div className="fe-box">
+        </a>
+        <a href="/plaques" className="fe-box">
           <img src={support} alt="" />
           <h6>Support</h6>
-        </div>
+        </a>
       </section>
     </>
   );

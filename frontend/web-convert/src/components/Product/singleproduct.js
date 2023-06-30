@@ -1,6 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function SingleProduct(props) {
+  const productData = {
+    img: props.img,
+    name: props.name,
+    price: props.price,
+    type: props.type,
+  };
   return (
     <>
       <div class="pro">
@@ -17,9 +24,9 @@ function SingleProduct(props) {
           </div>
           <h4>{props.price}</h4>
         </div>
-        <a href={props.link}>
+        <Link to={"/singleProduct/" + props.name} state={productData}>
           <i class="fal fa-shopping-cart cart"></i>
-        </a>
+        </Link>
       </div>
     </>
   );

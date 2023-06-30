@@ -1,22 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./imgs/logo.png";
 import Navbaritems from "./navbaritems";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
-  // Script for navigation bar
-  const close = document.getElementById("close");
-  const bar = document.getElementById("bar");
-  const nav = document.getElementById("navbar");
+  const [menuBar, setMenuBar] = useState(false);
 
-  if (bar) {
-    bar.addEventListener("click", () => {
-      nav.classList.add("active");
-    });
-  }
-  if (close) {
-    close.addEventListener("click", () => {
+  const handleToggle = () => {
+    setMenuBar((current) => !current);
+    const nav = document.getElementById("navbar");
+    if (menuBar === true) {
       nav.classList.remove("active");
-    });
-  }
+    } else {
+      nav.classList.add("active");
+    }
+  };
 
   return (
     <>
@@ -24,6 +22,9 @@ const Navbar = () => {
         <a href="/">
           <img src={logo} className="logo" alt="" />
         </a>
+        <div id="mobile">
+          <FontAwesomeIcon icon={faBars} onClick={handleToggle} />
+        </div>
         <ul id="navbar">
           <Navbaritems page="/" name="Home" />
           <Navbaritems page="/frames" name="Frames" />
@@ -31,13 +32,10 @@ const Navbar = () => {
           <Navbaritems page="/about" name="About" />
           <Navbaritems page="/contact" name="Contact" />
 
-          <a href="/" id="close">
+          <a href="/" id="close" onClick={handleToggle}>
             <i className="far fa-times"></i>
           </a>
         </ul>
-      </div>
-      <div id="mobile">
-        <i id="bar" className="fas fa-outdent"></i>
       </div>
     </>
   );

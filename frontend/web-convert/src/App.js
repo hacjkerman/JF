@@ -10,6 +10,7 @@ import Cart from "./pages/cart";
 import Shop from "./pages/shop";
 import Frames from "./pages/frames";
 import Plaques from "./pages/plaques";
+import SingleProductPage from "./pages/singleProductPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/singleProduct/:id" element={<SingleProductPage />} />
       </Routes>
     </>
   );

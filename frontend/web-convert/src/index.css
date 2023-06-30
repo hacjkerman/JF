@@ -1034,6 +1034,7 @@ footer .copyright {
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 80px 0 0 10px;
     transition: 0.3s;
+    z-index: 999;
   }
 
   #navbar.active {
@@ -1048,12 +1049,14 @@ footer .copyright {
     background-color: #e3e6f3;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
     position: sticky;
-    top: 62px;
+    top: 0;
     left: 0;
-    z-index: 999;
+    font-size: 25px;
   }
 
   #mobile i {
