@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Footer from "../components/Footer/footer";
 import Featured from "../components/Product/Featured";
 
 function SingleProductPage() {
+  // TODO Fix React not scrolling to top upon rerendering of page
   const location = useLocation();
   const productData = location.state;
-  console.log(productData);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <section id="prodetails" class="section-p1">

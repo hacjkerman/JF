@@ -11,22 +11,26 @@ function SingleProduct(props) {
   return (
     <>
       <div class="pro">
-        <img src={props.img} alt="" />
-        <div class="des">
-          <span>Jackson Frames</span>
-          <h5>{props.name}</h5>
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+        <Link
+          to={"/singleProduct/" + props.name}
+          style={{ textDecoration: "none" }}
+          state={productData}
+        >
+          <img src={props.img} alt="" />
+          <div class="des">
+            <span>Jackson Frames</span>
+            <h5>{props.name}</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>{props.price}</h4>
           </div>
-          <h4>{props.price}</h4>
-        </div>
-        <Link to={"/singleProduct/" + props.name} state={productData}>
-          <i class="fal fa-shopping-cart cart"></i>
         </Link>
+        <i class="fal fa-shopping-cart cart"></i>
       </div>
     </>
   );

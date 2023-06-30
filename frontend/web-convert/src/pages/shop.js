@@ -4,7 +4,7 @@ function Shop() {
   return (
     <>
       <section id="page-header">
-        <h2>Frames</h2>
+        <h1>Shop All</h1>
         <p>Find all the frames we offer here!</p>
       </section>
 
