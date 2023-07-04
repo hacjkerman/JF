@@ -72,6 +72,80 @@ export const products = {
       price: "$179",
       img: one,
       link: "https://square.link/u/n6aHEPb1",
+      options: [
+        {
+          university: "UNSW",
+          images: {
+            main: one,
+            small1: one,
+            small2: one,
+            small3: one,
+            small4: one,
+          },
+        },
+        {
+          university: "UON",
+          images: {
+            main: one,
+            small1: one,
+            small2: one,
+            small3: one,
+            small4: one,
+          },
+        },
+        {
+          university: "ANU",
+          images: {
+            main: one,
+            small1: one,
+            small2: one,
+            small3: one,
+            small4: one,
+          },
+        },
+        {
+          university: "UOW",
+          images: {
+            main: one,
+            small1: one,
+            small2: one,
+            small3: one,
+            small4: one,
+          },
+        },
+        {
+          university: "WSU",
+          images: {
+            main: one,
+            small1: one,
+            small2: one,
+            small3: one,
+            small4: one,
+          },
+        },
+        {
+          university: "UND",
+          images: {
+            main: one,
+            small1: one,
+            small2: one,
+            small3: one,
+            small4: one,
+          },
+        },
+        {
+          university: "UNE",
+          images: {
+            main: one,
+            small1: one,
+            small2: one,
+            small3: one,
+            small4: one,
+          },
+        },
+      ],
+      description:
+        "Highly polished elegant rosewood timber frame with two gold trim lines on the outside edge and one on the inside adjacent to the glass. Made to your university degree dimensions with mat board options.",
     },
     {
       name: "Elegance",

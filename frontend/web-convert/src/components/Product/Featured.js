@@ -16,14 +16,49 @@ function Featured() {
         <h2>Popular Range</h2>
         <p>University's Best Sellers</p>
         <div class="pro-container">
-          <SingleProduct img={one} name="Embassy" price="$189" />
-          <SingleProduct img={two} name="Majestic Satin" price="$189" />
-          <SingleProduct img={three} name="Majestic Gold" price="$189" />
-          <SingleProduct img={four} name="Signature Gold" price="$189" />
-          <SingleProduct img={five} name="Modern Black" price="$189" />
-          <SingleProduct img={six} name="Signature Gun Metal" price="$189" />
-          <SingleProduct img={seven} name="Graduate" price="$189" />
-          <SingleProduct img={eight} name="Prestige Gold" price="$189" />
+          <SingleProduct img={one} name="Embassy" price="$189" type="Frames" />
+          <SingleProduct
+            img={two}
+            name="Majestic Satin"
+            price="$189"
+            type="Frames"
+          />
+          <SingleProduct
+            img={three}
+            name="Majestic Gold"
+            price="$189"
+            type="Frames"
+          />
+          <SingleProduct
+            img={four}
+            name="Signature Gold"
+            price="$189"
+            type="Frames"
+          />
+          <SingleProduct
+            img={five}
+            name="Modern Black"
+            price="$189"
+            type="Frames"
+          />
+          <SingleProduct
+            img={six}
+            name="Signature Gun Metal"
+            price="$189"
+            type="Frames"
+          />
+          <SingleProduct
+            img={seven}
+            name="Graduate"
+            price="$189"
+            type="Frames"
+          />
+          <SingleProduct
+            img={eight}
+            name="Prestige Gold"
+            price="$189"
+            type="Frames"
+          />
         </div>
         <div>
           <a href="/frames">

@@ -5,7 +5,6 @@ function Shop() {
     <>
       <section id="page-header">
         <h1>Shop All</h1>
-        <p>Find all the frames we offer here!</p>
       </section>
 
       <section class="section-p1" id="product1">
